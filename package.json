@@ -1,0 +1,26 @@
+{
+  "name": "apollocatai",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npx wrangler pages dev pages",
+    "login": "npx wrangler login",
+    "deploy": "npx wrangler pages deploy ./pages --project-name=apollocatai",
+    "upgrade": "npm install wrangler@latest"
+  },
+  "keywords": [
+    ""
+  ],
+  "exports": {
+    "./ram": "./ram.js"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.3.4"
+  },
+  "devDependencies": {
+    "wrangler": "^3.51.2"
+  }
+}

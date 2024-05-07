@@ -1,0 +1,7 @@
+name="apollocatai"
+pages_build_output_dir="pages"
+kv_namespaces = [
+  { binding = "DB", id = "2fd883017f524d6186d388991e7a026e" },
+]
+[ai]
+binding = "AI"

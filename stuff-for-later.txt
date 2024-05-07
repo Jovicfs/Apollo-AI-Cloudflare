@@ -1,0 +1,25 @@
+
+    <script src="/js/post.js"></script>
+    <script>
+        async function test2() {
+            const postExample = await postData('/read_post_body', {
+                hello_there: 42,
+                example: ["test", "test"],
+                obj: {
+                    hello: "world"
+                }
+            });
+            alert(JSON.stringify(postExample));
+        }
+    </script>
+
+    
+    <!-- <meta http-equiv="Content-Security-Policy" content="
+    default-src 'none'; 
+    script-src 'self'; 
+    connect-src 'self'; 
+    img-src 'self'; 
+    style-src 'self';
+    font-src 'self';
+    manifest-src 'self';
+    "> -->
